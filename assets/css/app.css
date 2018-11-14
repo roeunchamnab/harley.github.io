@@ -1,0 +1,99 @@
+
+body{
+    background-color: #fafafa;
+}
+header, main, footer {
+    padding-left: 240px;
+}
+@media only screen and (min-width : 991px) {
+    header, main, footer {
+    }
+    .sidenav{
+        box-shadow: none;
+        z-index: 100;
+    }
+    .sidenav-overlay{
+        display: none !important;
+    }
+}
+.is-active{
+    transform: translateX(-105%) !important;
+}
+.brand-logo{
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 18px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+tbody tr:hover{
+    box-shadow: 0 0 3px 1px rgba(0,123,255,.3);
+}
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+.btn-action-delete:hover{
+    background-color: rgba(255,0,0,.1);
+    color: #333333;
+}
+.btn-action-edit:hover{
+    background-color: rgba(253,216,53,.3);
+    color: #333333;
+}
+.table{
+    width: 100%;
+}
+.tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.tr:hover .action{
+    display: flex;
+}
+.action{
+    background: #fafafa;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    justify-content: end;
+    align-items: center;
+    padding: 0 16px;
+}
+.action > span:hover{
+}
+.action > span{
+    background: transparent;
+    margin-left: 10px;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #727373;
+}
+.action > span > .material-icons{
+    font-size: 22px;
+}
+.thead{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.tbody .tr:hover{
+    box-shadow: 0 0 3px 1px rgba(0,123,255,.3);
+}
+.td{
+    flex: 1;
+    padding: 8px 5px;
+}
